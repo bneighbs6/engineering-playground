@@ -1,20 +1,16 @@
-import React, {useState} from "react";
+import React from "react";
 
-function Brett() {
-    const [message, setMessage] = useState(false);
-
-    const handleBrettSubmit = () => {
-        setMessage(!message)
-    }
-
-    return (
-        <>
-            <div className="button">
-                <button className="btn btn-outline-dark m-4" onClick={handleBrettSubmit}>Brett</button>
-                {message && <p>Brett is 28 years old.</p>}
-            </div>
-        </>
-    )
+function Brett({ handleBrettClick, message, age }) {
+  return (
+    <>
+      <div className="button">
+        <button className="btn btn-outline-dark m-4" onClick={handleBrettClick}>
+          Brett
+        </button>
+        {message && <p>Brett is {age} years old.</p>}
+      </div>
+    </>
+  );
 }
 
 export default Brett;
