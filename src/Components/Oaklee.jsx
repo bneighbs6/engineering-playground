@@ -10,7 +10,7 @@ function Oaklee() {
 
 // retunrs Oaklee button that when clicked will return the message
   return (
-    <div>
+    <div className="button">
       <button className="btn btn-danger m-4" onClick={handleOakleeClick}>Oaklee</button>
       {message && <p>Oaklee is 4 years old</p>}
     </div>
