@@ -5,7 +5,7 @@ function Shalaina({ message, handleShalainaClick, age }) {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        // creating an asynch function to handle fetch call to jsonplaceholder
+        // creating an async function to handle fetch call to jsonplaceholder for a photo
                 async function loadPhoto() {
                     // make isLoading state = true
                     setIsLoading(true);

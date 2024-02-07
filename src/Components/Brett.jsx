@@ -10,7 +10,7 @@ function Brett({ handleBrettClick, message, age }) {
             // setIsLoading(true);
             const response = await fetch("https://jsonplaceholder.typicode.com/albums/1/photos");
             const photofromAPI = await response.json();
-            setPhoto(photofromAPI[0]);
+            setPhoto(photofromAPI[4]);
             // setIsLoading(false);
         }
 
@@ -28,6 +28,7 @@ function Brett({ handleBrettClick, message, age }) {
                     <>
                         <p>Brett is {age} years old.</p>
                         {<img src={photo.url} alt={photo.title} />}
+                        <p className="my-3">Put whatever I want here.</p>
                     </>
                 )}
             </div>
