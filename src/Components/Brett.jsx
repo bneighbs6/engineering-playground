@@ -2,15 +2,16 @@ import React, { useEffect, useState } from "react";
 
 function Brett({ handleBrettClick, message, age }) {
     const [photo, setPhoto] = useState({});
-    const [isLoading, setIsLoading] = useState(true);
+  //  const [isLoading, setIsLoading] = useState(true); if you add this back in,
+  // you must add !isLoading && to the {<img src={photo.url} alt={photo.title} />}
 
     useEffect(() => {
         async function loadPhoto() {
-            setIsLoading(true);
+            // setIsLoading(true);
             const response = await fetch("https://jsonplaceholder.typicode.com/albums/1/photos");
             const photofromAPI = await response.json();
             setPhoto(photofromAPI[0]);
-            setIsLoading(false);
+            // setIsLoading(false);
         }
 
         loadPhoto();
@@ -26,7 +27,7 @@ function Brett({ handleBrettClick, message, age }) {
                 {message && (
                     <>
                         <p>Brett is {age} years old.</p>
-                        {!isLoading && <img src={photo.url} alt={photo.title} />}
+                        {<img src={photo.url} alt={photo.title} />}
                     </>
                 )}
             </div>
