@@ -1,6 +1,6 @@
 function Header() {
     return (
-        <h1 className="text-center">How old is everyone in the Neighbors family?</h1>
+        <h1 className="text-center">Click a question</h1>
     )
 }
 

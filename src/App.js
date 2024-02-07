@@ -44,17 +44,24 @@ function App() {
       <Routes>
         <Route element={<Header />} />
         <Route exact={true} path="/" element={<Home />} />
-        <Route path="/brett" element={<Brett
-          age={age.brett}
-          message={message.brett}
-          handleBrettClick={() => handleClick("brett")}
-        />} />
+        <Route path="/family-ages">
+          <Route element={<Brett
+            age={age.brett}
+            message={message.brett}
+            handleBrettClick={() => handleClick("brett")}
+          />} />
+
+          <Route element={<Shalaina
+            age={age.shalaina}
+            message={message.shalaina}
+            handleShalainaClick={() => handleClick("shalaina")}
+          />} />
+        </Route>
+        
+        
         {/*
-          <Shalaina
-          age={age.shalaina}
-          message={message.shalaina}
-          handleShalainaClick={() => handleClick("shalaina")}
-        />
+          
+        
         <Oaklee
           age={age.oaklee}
           message={message.oaklee}
