@@ -1,10 +1,10 @@
 import './App.css';
 import Header from './Components/Header';
 import Home from './Components/Home';
-import Brett from './Components/peope-components/Brett';
-import Shalaina from './Components/peope-components/Shalaina';
-import Oaklee from "./Components/peope-components/Oaklee"
-import Everlee from './Components/peope-components/Everlee';
+import Brett from './Components/family-members/Brett';
+import Shalaina from './Components/family-members/Shalaina';
+import Oaklee from "./Components/family-members/Oaklee"
+import Everlee from './Components/family-members/Everlee';
 import React, { useState } from "react"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
