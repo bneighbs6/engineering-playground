@@ -28,7 +28,7 @@ function App() {
   const handlePersonClick = (component) => {
     setMessage({ message, [component]: !message[component] });
     if (message[component]) {
-      setAge({ age, [component]: age[component] + 1 });
+      setAge({ ...age, [component]: age[component] + 1 });
     }
   };
     const handleAgeClick = {
