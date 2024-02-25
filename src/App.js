@@ -46,8 +46,11 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route element={<Header />} />
-        <Route exact={true} path="/" element={<Home />} />
+        <Route exact={true} path="/" element={
+          <div>
+            <Home />
+          </div>
+        } />
         <Route path="/family-ages" element={
           <div>
             <Header />

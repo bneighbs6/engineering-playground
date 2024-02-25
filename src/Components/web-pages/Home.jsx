@@ -8,9 +8,7 @@ function Home() {
         <div className="home-page">
             <div className="header-title text-center">
                 <h1>Neighbors Family Shits & Gigs</h1>
-            </div>
-            <div className="header">
-                <Header />
+                {<Header />}
             </div>
             <ol>
             <li>
