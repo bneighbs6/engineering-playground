@@ -1,10 +1,10 @@
 import './App.css';
 import Header from './Components/Header';
 import Home from './Components/Home';
-import Brett from './Components/Brett';
-import Shalaina from './Components/Shalaina';
-import Oaklee from "./Components/Oaklee"
-import Everlee from './Components/Everlee';
+import Brett from './Components/peope-components/Brett';
+import Shalaina from './Components/peope-components/Shalaina';
+import Oaklee from "./Components/peope-components/Oaklee"
+import Everlee from './Components/peope-components/Everlee';
 import React, { useState } from "react"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -31,16 +31,16 @@ function App() {
       setAge({ ...age, [component]: age[component] + 1 });
     }
   };
-    const handleAgeClick = {
+  const handleAgeClick = {
 
-    }
-    // Wrapping everything we return within a <Router> component
-    // Once you have a <Router> in place, you can use <Route> components to 
-    // render or hide components based on the URL path.
+  }
+  // Wrapping everything we return within a <Router> component
+  // Once you have a <Router> in place, you can use <Route> components to 
+  // render or hide components based on the URL path.
 
-    // Wrapping a component with <Route> is similar to wrapping it in an if 
-    // statement. If the URL matches the path property of the route, the component will 
-    // be rendered.
+  // Wrapping a component with <Route> is similar to wrapping it in an if 
+  // statement. If the URL matches the path property of the route, the component will 
+  // be rendered.
 
 
   return (
@@ -73,6 +73,15 @@ function App() {
           </div>
         }>
         </Route>
+
+        <Route path="/family-members" element={
+          <div>
+            <Brett />
+            <Shalaina />
+            <Oaklee />
+            <Everlee />
+          </div>
+        }></Route>
       </Routes>
 
     </Router>
