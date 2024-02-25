@@ -1,6 +1,6 @@
 import './App.css';
-import Header from './Components/Header';
-import Home from './Components/Home';
+import Header from './Components/web-pages/Header';
+import Home from './Components/web-pages/Home';
 import Brett from './Components/family-members/Brett';
 import Shalaina from './Components/family-members/Shalaina';
 import Oaklee from "./Components/family-members/Oaklee"
