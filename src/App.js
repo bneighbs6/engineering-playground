@@ -26,11 +26,11 @@ function App() {
   // handle click event that sets message state to true when clicked
   // Creates new message starting w/ ...message
   const handlePersonClick = (component) => {
-    setMessage({ ...message, [component]: !message[component] });
+    setMessage({ message, [component]: !message[component] });
     if (message[component]) {
-      setAge({ ...age, [component]: age[component] + 1 });
+      setAge({ age, [component]: age[component] + 1 });
     }
-
+  };
     const handleAgeClick = {
 
     }
@@ -42,7 +42,7 @@ function App() {
     // statement. If the URL matches the path property of the route, the component will 
     // be rendered.
 
-  };
+
   return (
     <Router>
       <Routes>
