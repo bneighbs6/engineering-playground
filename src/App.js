@@ -50,6 +50,7 @@ function App() {
         <Route exact={true} path="/" element={<Home />} />
         <Route path="/family-ages" element={
           <div>
+            <Header />
             <Brett
               age={age.brett}
               message={message.brett}
@@ -76,6 +77,7 @@ function App() {
 
         <Route path="/family-members" element={
           <div>
+            <Header />
             <Brett />
             <Shalaina />
             <Oaklee />
