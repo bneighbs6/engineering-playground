@@ -46,11 +46,13 @@ function App() {
   return (
     <Router>
       <Routes>
+        
         <Route exact={true} path="/" element={
           <div>
             <Home />
           </div>
         } />
+
         <Route path="/family-ages" element={
           <div>
             <Header />
