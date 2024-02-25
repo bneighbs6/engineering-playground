@@ -60,36 +60,19 @@ function App() {
               message={message.shalaina}
               handleShalainaClick={() => handlePersonClick("shalaina")}
             />
-            <Oaklee 
+            <Oaklee
               age={age.oaklee}
               message={message.oaklee}
               handleOakleeClick={() => handlePersonClick("oaklee")}
             />
             <Everlee
-            age={age.everlee}
-            message={message.everlee}
-            handleEverleeClick={() => handlePersonClick("everlee")}
+              age={age.everlee}
+              message={message.everlee}
+              handleEverleeClick={() => handlePersonClick("everlee")}
             />
           </div>
         }>
         </Route>
-
-
-        {/*
-          
-        
-        <Oaklee
-          age={age.oaklee}
-          message={message.oaklee}
-          handleOakleeClick={() => handleClick("oaklee")}
-        />
-        <Everlee
-          age={age.everlee}
-          message={message.everlee}
-          handleEverleeClick={() => handleClick("everlee")}
-        />
-        */}
-
       </Routes>
 
     </Router>
