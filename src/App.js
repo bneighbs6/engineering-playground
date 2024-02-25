@@ -24,12 +24,15 @@ function App() {
   });
 
   // handle click event that sets message state to true when clicked
-  const handleClick = (component) => {
+  const handlePersonClick = (component) => {
     setMessage({ ...message, [component]: !message[component] });
     if (message[component]) {
       setAge({ ...age, [component]: age[component] + 1 });
     }
 
+  const handleAgeClick = {
+
+  } 
 // Wrapping everything we return within a <Router> component
 // Once you have a <Router> in place, you can use <Route> components to 
 // render or hide components based on the URL path.
@@ -45,16 +48,16 @@ function App() {
         <Route element={<Header />} />
         <Route exact={true} path="/" element={<Home />} />
         <Route path="/family-ages">
-          <Route element={<Brett
+          <Route index element={<Brett
             age={age.brett}
             message={message.brett}
-            handleBrettClick={() => handleClick("brett")}
+            handleBrettClick={() => handlePersonClick("brett")}
           />} />
 
           <Route element={<Shalaina
             age={age.shalaina}
             message={message.shalaina}
-            handleShalainaClick={() => handleClick("shalaina")}
+            handleShalainaClick={() => handlePersonClick("shalaina")}
           />} />
         </Route>
         

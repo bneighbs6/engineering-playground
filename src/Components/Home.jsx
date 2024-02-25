@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import {useNavigate, Link} from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 
 function Home() {
     const navigate = useNavigate();
@@ -12,18 +12,20 @@ function Home() {
             <div className="header">
                 <Header />
             </div>
-            <form>
-                <ol>
-                    <li>
-                        How Old Is Neighbors Family? 
-                    <Link to="/family-ages">
-                       <button>Click Here</button>
+            <ol>
+            <li>
+                    <p><strong>Who Belongs to the Neighbors Family?</strong></p>
+                    <Link to="/family-members" className="my-4">
+                        <button>Click Here</button>
                     </Link>
-                    </li>
-                    
-                </ol>
-            </form>
-
+                </li>
+                <li className="my-4">
+                    <p><strong>How Old Is Neighbors Family?</strong></p>
+                    <Link to="/family-ages" className="my-4">
+                        <button>Ages Click Here</button>
+                    </Link>
+                </li>
+            </ol>
         </div>
     )
 }
