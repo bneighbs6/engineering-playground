@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './Components/web-pages/Header';
 import Home from './Components/web-pages/Home';
+import FamilyAges from './Components/web-pages/FamilyAges'
 import Brett from './Components/family-members/Brett';
 import Shalaina from './Components/family-members/Shalaina';
 import Oaklee from "./Components/family-members/Oaklee"
@@ -46,7 +47,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        
+
         <Route exact={true} path="/" element={
           <div>
             <Home />
@@ -54,29 +55,7 @@ function App() {
         } />
 
         <Route path="/family-ages" element={
-          <div>
-            <Header />
-            <Brett
-              age={age.brett}
-              message={message.brett}
-              handleBrettClick={() => handlePersonClick("brett")}
-            />
-            <Shalaina
-              age={age.shalaina}
-              message={message.shalaina}
-              handleShalainaClick={() => handlePersonClick("shalaina")}
-            />
-            <Oaklee
-              age={age.oaklee}
-              message={message.oaklee}
-              handleOakleeClick={() => handlePersonClick("oaklee")}
-            />
-            <Everlee
-              age={age.everlee}
-              message={message.everlee}
-              handleEverleeClick={() => handlePersonClick("everlee")}
-            />
-          </div>
+          <FamilyAges />
         }>
         </Route>
 
