@@ -55,7 +55,7 @@ function App() {
 
         <Route path="/family-ages" element={
           <div>
-          <Header />
+          <Header word="name" />
           <Brett
             age={age.brett}
             message={message.brett}
@@ -82,7 +82,7 @@ function App() {
 
         <Route path="/family-members" element={
           <div>
-            <Header />
+            <Header word="name" />
             <Brett />
             <Shalaina />
             <Oaklee />
