@@ -5,6 +5,7 @@ import Brett from './Components/family-members/Brett';
 import Shalaina from './Components/family-members/Shalaina';
 import Oaklee from "./Components/family-members/Oaklee"
 import Everlee from './Components/family-members/Everlee';
+import FamilyLocations from './Components/web-pages/FamilyLocations';
 import React, { useState } from "react"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -88,7 +89,16 @@ function App() {
             <Oaklee />
             <Everlee />
           </div>
-        }></Route>
+        }>
+         </Route>
+
+         <Route path="/family-locations" element={
+          <div>
+            <Header word="state" />
+            <FamilyLocations />
+          </div>
+         }>
+         </Route>
       </Routes>
 
     </Router>
