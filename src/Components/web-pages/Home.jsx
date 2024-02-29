@@ -23,6 +23,12 @@ function Home() {
                         <button className="btn btn-outline-primary">Family Ages</button>
                     </Link>
                 </li>
+                <li className="my-4">
+                    <p><strong>Where do the Neighbors family live?</strong></p>
+                    <Link to="/family-location" className="my-4">
+                        <button className="btn btn-outline-primary">Family Location</button>
+                    </Link>
+                </li>
             </ol>
         </div>
     )
