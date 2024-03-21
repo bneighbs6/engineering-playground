@@ -1,11 +1,13 @@
 import React from "react";
 import Header from "./Header";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, useHistory, Link } from "react-router-dom";
 
 function FamilyLocations({ handleStateClick }) {
+    const navigate = useNavigate();
     return (
         <div className="family-locations">
             <header className="text-center m-4">Where do they live?</header>
+            <button className="btn btn-dark m-4" onClick={() => {navigate("/")}}>Home</button>
             <ul>
                 <li><button className="btn btn-success my-4" onClick={() => {console.log('Need to display false on page')}}>Washington</button></li>
                 <li><button className="btn btn-primary my-4" onClick={() => {console.log("Need to display false on page")}}>Nevada</button></li>
