@@ -7,7 +7,7 @@ function Home() {
     return (
         <div className="home-page">
             <div className="header-title text-center">
-                <h1>Neighbors Family Shits & Gigs</h1>
+                <h1>Neighbors Family Information</h1>
                 {<Header word="question" />}
             </div>
             <ol>
